@@ -1,0 +1,10 @@
+                    	<li><a href="latest_news.php"> Latest News </a></li>
+                        <li><a href="tn_news.php"> That's Nice News </a></li>
+                        <li><a href="cl_news.php"> Client News </a></li>
+                        <li><a href="pr_news.php"> Project News </a></li>
+                        <li><a href="ng_news.php"> Nice Gift News </a></li>
+                        <li><a href="ne_news.php"> Nice Exhibit News </a></li>
+                        <li><a href="ns_news.php"> Nice Short News </a></li>
+                        <li><a href="tn_events.php"> That's Nice Events </a></li>
+                        <li><a href="tn_video_bait.php"> That's Nice Video Bait </a></li>
+                        <li><a href="manage_hp_slider.php"> Home Page Slider </a></li>

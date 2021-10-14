@@ -1,0 +1,57 @@
+<?php
+
+
+//------------------------Connect to Database -------------//
+include "../share/db.php";
+
+//=== Vars =====================================================================================================//
+
+$img = basename( $_FILES['img']['name']);
+
+$id = $_POST["id"];
+
+$title = $_POST["title"];
+$headline = $_POST["headline"];
+$copy = $_POST["copy"];
+$src = $_POST["src"];
+$h = $_POST["h"];
+$w = $_POST["w"];
+$link_text = $_POST["link_text"];
+$gal = $_POST["gal"];
+$v_swtich = $_POST["v_swtich"];
+$emb_src = $_POST["emb_src"];
+$blank="";
+
+
+
+$title = mysql_escape_string($title);
+$headline = mysql_escape_string($headline);
+$copy = mysql_escape_string($copy);
+$link_text = mysql_escape_string($link_text);
+$src = mysql_escape_string($src);
+$h = mysql_escape_string($h);
+$w = mysql_escape_string($w);
+
+
+//upload Image
+
+$target_path = "../upload/homepage_images/";
+$target_path = $target_path . basename( $_FILES['img']['name']); 
+if(move_uploaded_file($_FILES['img']['tmp_name'], $target_path)) {
+} else{
+}
+
+// =============Insert Everything into the database==================================//
+
+$insert_data = "UPDATE TN_misc_bait SET title =  '$title', headline = '$headline', copy = '$copy', link_text = '$link_text', link_src = '$src', h = '$h', w = '$w', gal_number = '$gal', v_switch = '$v_swtich', emb_src = '$emb_src' WHERE id = '$id'";
+mysql_query($insert_data) or die ( mysql_error() );
+
+if($img !== "") {
+$insert_data = "UPDATE TN_misc_bait SET img = '$img' WHERE id = '$id'";
+mysql_query($insert_data) or die ( mysql_error() );
+}
+
+
+$error = "<font color=\"red\">Bait Added</font><br><br>";
+include "tn_video_bait.php";
+?>

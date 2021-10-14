@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.admin_home{
+padding-left:20px;
+}
+
+#wrapper {
+width:800px;
+position:relative;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+background-color:#FFFFFF;
+}
+
+.header {
+width:800px;
+background-color:#FF9900;
+height:75px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#admin_nav {
+width:800px;
+background-color:#00CC99;
+height:30px;
+margin-left:auto;
+margin-right:auto;
+}
+
+body	{
+
+	background-color:#E1E1E1;
+}
+
+home_links {
+text-decoration:none;
+}
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+a:link {
+	color:#FF9900
+}
+a:visited {
+	color: #FF9900;
+}
+a:hover {
+	color: #FF9900;
+}
+a:active {
+	color: #FF9900;
+}
+
+.slider_form {
+padding-left:50px;
+}
+
+.smaller_font {
+font-size:90%;
+}
